@@ -1,16 +1,16 @@
-package MAS.MP3_Socha_Maria_s19701.Multi_aspect_inheritance;
+package MAS.MP3_Socha_Maria_s19701.Polymorphic_method_call;
 
 import java.time.LocalDate;
 
-public class Pet {
+public abstract class PolyPet {
+    //abstract class
     //parent class
-    
     String name;
     LocalDate birthdate;
     String history;
 
 
-    public Pet(String name) {
+    protected PolyPet(String name) {
         this.name = name;
     }
 
@@ -37,6 +37,18 @@ public class Pet {
 
     public void setHistory(String history) {
         this.history = history;
+    }
+
+    public int getAge(){
+        return LocalDate.now().getYear() - getBirthdate().getYear();
+    }
+
+    public boolean isYoung(){
+        if(getAge() < 2){
+            return true;
+        } else {
+            return false;
+        }
     }
     
 }

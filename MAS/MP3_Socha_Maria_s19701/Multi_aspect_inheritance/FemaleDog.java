@@ -1,6 +1,6 @@
 package MAS.MP3_Socha_Maria_s19701.Multi_aspect_inheritance;
 
-public class FemaleDog extends Dog implements Female{
+public class FemaleDog extends MultiDog implements Female{
     //these attributes need to be added manually
     private boolean isSpayed;
     private boolean isPregnant;

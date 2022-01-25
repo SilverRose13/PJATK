@@ -1,16 +1,16 @@
-package MAS.MP3_Socha_Maria_s19701.Polymorphic_method_call;
+package MAS.MP3_Socha_Maria_s19701.Dynamic_Inheritance;
 
 import java.time.LocalDate;
 
-public abstract class Pet {
-    //abstract class
+public class DynamicPet {
     //parent class
+    
     String name;
     LocalDate birthdate;
     String history;
 
 
-    protected Pet(String name) {
+    public DynamicPet(String name) {
         this.name = name;
     }
 
@@ -37,18 +37,6 @@ public abstract class Pet {
 
     public void setHistory(String history) {
         this.history = history;
-    }
-
-    public int getAge(){
-        return LocalDate.now().getYear() - getBirthdate().getYear();
-    }
-
-    public boolean isYoung(){
-        if(getAge() < 2){
-            return true;
-        } else {
-            return false;
-        }
     }
     
 }

@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         //these reference type Pet 
-        Pet Anu = new Dog("Anubis");
-        Pet Mysia = new Cat("Mysia");
+        PolyPet Anu = new PolyDog("Anubis");
+        PolyPet Mysia = new PolyCat("Mysia");
 
         //the following methods are inherited from the Pet class but used in the Dog class
         Anu.setBirthdate(LocalDate.of(2021, 6, 8));

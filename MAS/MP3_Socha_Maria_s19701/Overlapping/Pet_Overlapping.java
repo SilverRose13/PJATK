@@ -2,9 +2,11 @@ package MAS.MP3_Socha_Maria_s19701.Overlapping;
 
 import java.time.LocalDate;
 
-enum PetType {DOG, CAT};
+import MAS.MP3_Socha_Maria_s19701.Overlapping.PetType;
 
-public class Pet {
+public class Pet_Overlapping {
+
+
     //I am using flattening to show and example of overlapping
     private String name;
     private LocalDate birthdate;
@@ -14,7 +16,7 @@ public class Pet {
     //a pet can only be of one species
     private PetType petType;
 
-    protected Pet(String name, PetType petType) {
+    public Pet_Overlapping(String name, PetType petType) {
         this.name = name;
         this.petType = petType;
     }

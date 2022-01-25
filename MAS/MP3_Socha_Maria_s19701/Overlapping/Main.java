@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         //these reference type Pet and give the type of pet through an enumerator
-        Pet Anu = new Pet("Anubis", PetType.DOG);
-        Pet Mysia = new Pet("Mysia", PetType.CAT);
+        Pet_Overlapping Anu = new Pet_Overlapping("Anubis", PetType.DOG);
+        Pet_Overlapping Mysia = new Pet_Overlapping("Mysia", PetType.CAT);
 
         Anu.setBirthdate(LocalDate.of(2021, 6, 8));
         Mysia.setBirthdate(LocalDate.of(2005, 12, 6));

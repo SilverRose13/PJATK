@@ -9,8 +9,8 @@ public class Main {
         CatOwner tina = new CatOwner("Martyna", true);
 
         //adding Pet values to show more of what is happeing in these objects
-        rose.addPet(new Pet("Anubis"));
-        tina.addPet(new Pet("Pusia"));
+        rose.addPet(new DynamicPet("Anubis"));
+        tina.addPet(new DynamicPet("Pusia"));
 
         //printing out our original pet owners
         System.out.println(rose.getName() + " " + rose.getPets().get(0).getName() + " " + rose.getLikesLongWalks());
@@ -22,8 +22,8 @@ public class Main {
         CatOwner newRose = new CatOwner(rose, false);
 
         //adding pets to our new pet owners
-        newTina.addPet(new Pet("Pikus"));
-        newRose.addPet(new Pet("Luna"));
+        newTina.addPet(new DynamicPet("Pikus"));
+        newRose.addPet(new DynamicPet("Luna"));
 
         //printing out information stored wiht our new pet owners
         System.out.println(newRose.getName() + " " + newRose.getPets().get(0).getName() + " " + newRose.getHasLitterBox());

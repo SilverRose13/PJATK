@@ -6,7 +6,7 @@ public class PetOwner {
     //parent class
     //not affected by the copying
     private String name;
-    private ArrayList<Pet> pets;
+    private ArrayList<DynamicPet> pets;
 
 
     public PetOwner(String name) {
@@ -22,20 +22,20 @@ public class PetOwner {
         this.name = name;
     }
 
-    public ArrayList<Pet> getPets() {
+    public ArrayList<DynamicPet> getPets() {
         return this.pets;
     }
 
-    public void setPets(ArrayList<Pet> pets) {
+    public void setPets(ArrayList<DynamicPet> pets) {
         this.pets = pets;
     }
 
     
-    public void addPet(Pet pet){
+    public void addPet(DynamicPet pet){
         pets.add(pet);
     }
 
-    public void removePet(Pet pet){
+    public void removePet(DynamicPet pet){
         pets.remove(pet);
     }
 

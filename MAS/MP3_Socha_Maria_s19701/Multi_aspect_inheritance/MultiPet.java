@@ -1,8 +1,8 @@
-package MAS.MP3_Socha_Maria_s19701.Dynamic_Inheritance;
+package MAS.MP3_Socha_Maria_s19701.Multi_aspect_inheritance;
 
 import java.time.LocalDate;
 
-public class Pet {
+public class MultiPet {
     //parent class
     
     String name;
@@ -10,7 +10,7 @@ public class Pet {
     String history;
 
 
-    public Pet(String name) {
+    public MultiPet(String name) {
         this.name = name;
     }
 

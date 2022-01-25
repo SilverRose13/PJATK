@@ -1,16 +1,16 @@
-package MAS.MP3_Socha_Maria_s19701.Disjoint_Inheritance;
+package MAS.MP3_Socha_Maria_s19701.Abstract_Inheritance;
 
 import java.time.LocalDate;
 
-public class Pet {
+public abstract class AbstractInheritancePet {
+    //abstract class
     //parent class
-    
     String name;
     LocalDate birthdate;
     String history;
 
 
-    public Pet(String name) {
+    protected AbstractInheritancePet(String name) {
         this.name = name;
     }
 

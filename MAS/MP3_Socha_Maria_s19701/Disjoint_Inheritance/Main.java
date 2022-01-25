@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        Dog Anu = new Dog("Anubis");
-        Cat Mysia = new Cat("Mysia");
+        DisjointDog Anu = new DisjointDog("Anubis");
+        DisjointCat Mysia = new DisjointCat("Mysia");
 
         //the following methods are inherited from the Pet class but used in the Dog class
         Anu.setBirthdate(LocalDate.of(2021, 6, 8));
