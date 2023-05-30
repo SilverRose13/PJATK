@@ -4,8 +4,8 @@
  #include<stdlib.h>
 
  extern YYSTYPE yylval;
-%}
 
+%}
 
 integer "-"?[0-9]+
 binNumber "-"?[0-1]+
@@ -89,6 +89,3 @@ hexadecimal ("hexadecimal"|"Hexadecimal")
 [-+*/]	return *yytext;
 
 %%
-int yywrap(){
-    return 1;
-}

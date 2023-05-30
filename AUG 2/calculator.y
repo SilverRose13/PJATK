@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 int yylex();
-extern int yyparse();
 void yyerror(const char *s);
 %}
 
@@ -27,9 +26,9 @@ void yyerror(const char *s);
 
 %%
 program:
-                program BINTOKEN {decToBin(expression);} '\n'       
+                program BINTOKEN expression decToBin '\n'       
 |               program DECTOKEN {printf("\nResult=%d\n", expression);}'\n'                
-|               program HEXTOKEN {decToHex(expression);} '\n'        
+|               program HEXTOKEN expression decToHex '\n'        
 |               
 ;
 
@@ -40,6 +39,12 @@ expression:
 |               expression '*' expression        { $$ = $1 * $3; }
 |               expression '/' expression        { $$ = $1 / $3; }
 ;
+
+decToBin: {decToBin(INTEGER);}
+                
+
+decToHex: {decToHex(INTEGER);}
+
 
 %%
 
